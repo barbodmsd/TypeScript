@@ -1,7 +1,17 @@
+// string
 let greeting:string='barbod'
+greeting.toLocaleUpperCase()
 
-greeting='mia'
+// number
+// const age:number=20.2
+// age.toFixed(2)
 
-console.log(greeting)
+let age=20.2
+// age='b' // wrong typescript is smart 
+age.toFixed()
+
+// boolean
+const isLogin:boolean=true
+isLogin.valueOf()
 
 export {}
