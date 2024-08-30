@@ -7,6 +7,7 @@ barbodHero.push('barbod')
 const newArray:Array<number>=[]
 newArray.push(2)
 
+
 type User={
     username:string
     password:number

@@ -8,6 +8,7 @@ var toUpper = function (value) {
   return value.toUpperCase();
 };
 toUpper("barbod");
+
 var user = function (name, email, isPaid) {
   if (isPaid === void 0) {
     isPaid = false;

@@ -32,6 +32,7 @@ const array: (string | number)[] = ['1', 1]// it's mean in the array most be num
 const secondArray: string | number[] = [] // it's wrong cause it's mean this value should be or array of number   or just string
 
 
+
 const thirdArray: string[] | number[] = ['1', '2'] //it's mean this array should be just array of numbers or array of strings
 
 const forthArray: Array<number> | Array<string> = ['5', '5'] //it's mean this array should be just array of numbers or array of strings

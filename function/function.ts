@@ -20,6 +20,7 @@ const value =addNumber(5)
 // const heros=['thor','spiderMan','ironMan']
 const heros=[1,2,5,5]
 
+
 heros.map((e:number):string=>{
     return `name is : ${e}`
 })

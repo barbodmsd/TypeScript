@@ -8,6 +8,7 @@ var info = {
 info = { username: '', id: 5 };
 var getId = function (id) {
     typeof id === 'string' && id.toUpperCase();
+    
 };
 getId('5');
 getId(5);
