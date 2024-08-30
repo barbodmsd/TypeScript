@@ -1,10 +1,10 @@
 # TypeScypt
  
-#intro
-#variable
-#function
-#object
-#array
-#union types
-#tupls
-#enums
++ intro
++ variable
++ function
++ object
++ array
++ union types
++ tupls
++ enums
