@@ -7,9 +7,21 @@ interface User {
     // coupon: (name: string, value: number) => number // it's didn't work
     coupon(name:string,value:number):number
 }
+interface User{// you can add to your interface type
+githubToken?:string
+}
 
-const user: User = {
+interface Admin extends User{}// you can extends from any interface you want
+
+// const user: User = {
+//     username: 'barbod', email: 'example@google.com', method: () => 'Hello, world!',
+//     githubToken:'https://github.com/barbodmsd',
+//     coupon: (barbodName: 'barbod', value: 5) => 10
+// }
+
+const user: Admin = {
     username: 'barbod', email: 'example@google.com', method: () => 'Hello, world!',
+    githubToken:'https://github.com/barbodmsd',
     coupon: (barbodName: 'barbod', value: 5) => 10
 }
 
