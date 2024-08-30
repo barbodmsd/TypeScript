@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 var score = 33;
 score = 'barbod';
 score = 20;
@@ -8,7 +10,6 @@ var info = {
 info = { username: '', id: 5 };
 var getId = function (id) {
     typeof id === 'string' && id.toUpperCase();
-    
 };
 getId('5');
 getId(5);
@@ -19,5 +20,3 @@ var thirdArray = ['1', '2']; //it's mean this array should be just array of numb
 var forthArray = ['5', '5']; //it's mean this array should be just array of numbers or array of strings
 var seat;
 seat = 'second';
-// seat = 'every thing' //error
-

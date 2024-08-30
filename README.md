@@ -8,3 +8,5 @@
 + union types
 + tupls
 + enums
++ interface
++ class 
