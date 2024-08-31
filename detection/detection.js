@@ -38,3 +38,26 @@ var adminAccount = function (account) {
     }
     return false;
 };
+///////////////instanceof jut for methods like new Date or new Array and ....
+var forthFunction = function (val) {
+    // if(typeof val ==='Date'){} // you ca't do this you got an error
+    if (val instanceof Date) {
+        return val.getDate();
+    }
+    else {
+        return val.toLowerCase();
+    }
+};
+var isFish = function (pet) {
+    return pet.swim !== undefined; // if the pet was fish it's return true
+};
+var getFood = function (pet) {
+    if (isFish(pet)) {
+        pet;
+        return 'fish food';
+    }
+    else {
+        pet;
+        return 'bird food ';
+    }
+};
