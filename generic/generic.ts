@@ -36,3 +36,32 @@ identityTwo<Bottle>({ brand: 'brand', type: 5 })
 const getSearch = <T,>(products: Array<T>): T => products[2]
 
 // the (,) mean this not a tag or component this generic type
+
+////////////////////////generics class
+
+const anotherFunction = <T, N extends number>(valueOne: T, valueTwo: N): object => {
+    return { valueOne, valueTwo }
+}
+
+// anotherFunction(5,'5') wrong x
+anotherFunction(20, 21)
+
+interface DataBase {
+    username: string
+    password: number
+}
+// you can write any word you like D,O,N anything 
+const dbFunction = <T, D extends DataBase>(valueOne: T, valueTwo: D): object => {
+    return { valueOne, valueTwo }
+}
+
+dbFunction(20, { username: 'barbodmsd', password: 2021545121 })
+
+////////////////////////generic with class
+
+class Sell<T> {
+    cart: T[] = []
+    addProduct(product: T) {
+        this.cart.push(product)
+    }
+}
