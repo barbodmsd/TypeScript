@@ -10,17 +10,18 @@ passed('string')//maybe the function return number to me and it's ok i didn't ha
 // for fix that we use generic
 
 
-// const identity<Type>=(value:Type):Type=>value
+
 function identity<Type>(value: Type): Type {
     return value
 }
+// with arrow function
 
+const identityTwo = <Type>(value: Type): Type => value
 identity(3)
 
 // shortcut
-function identityTwo<T>(value: T): T {
-    return value
-}
+const identityThree = <T>(value: T): T => value
+
 identityTwo(true)
 
 // you can pass your own type generic 
@@ -30,3 +31,8 @@ interface Bottle {
     type: number
 }
 identityTwo<Bottle>({ brand: 'brand', type: 5 })
+
+// generics in array  
+const getSearch = <T,>(products: Array<T>): T => products[2]
+
+// the (,) mean this not a tag or component this generic type
