@@ -67,19 +67,65 @@ const forthFunction = (val: Date | string) => {
 type Fish = { swim: () => void }
 type Bird = { fly: () => void }
 
-const isFish = (pet: Fish | Bird):pet is Fish => {
+const isFish = (pet: Fish | Bird): pet is Fish => {
     return (pet as Fish).swim !== undefined // if the pet was fish it's return true
 }
 
-const getFood=(pet:Fish|Bird)=>{
-    if(isFish(pet)){
+const getFood = (pet: Fish | Bird) => {
+    if (isFish(pet)) {
         pet
         return 'fish food'
-    }else {
+    } else {
         pet
         return 'bird food '
     }
 }
+////////////////////////////////////
+interface Circle {
+    kind: 'circle'
+    side: number
+}
+interface Square {
+    kind: 'square'
+    side: number
+}
+interface Rectangle {
+    kind: 'rect'
+    with: number
+}
+type Shape = Circle | Rectangle | Square
 
+const getShape = (shape: Shape) => {
+    if (shape.kind === 'rect') {
+        return 'rect'
+    }
+    return 'circle'
+}
+// or
+const shapeOf = (shape: Shape) => {
+    switch (shape.kind) {
+        case "rect":
+            return 'rect'
+        case 'circle':
+            return 'circle'
+        case 'square':
+            return 'square'
+        default:
+            const defaultShape: never = shape
+            return defaultShape
+    }
+}
+////////////////////////////////////////
+interface ShapeOf {
+    kind: 'circle' | 'rect'
+    side?: number
+    width?: number
+}
+const getShapeTwo = (shape: ShapeOf) => {
+    if (shape.kind === 'rect') {
+        return 'rect'
+    }
+    return 'circle'
+}
 
 export { }
