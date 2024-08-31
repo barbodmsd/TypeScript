@@ -1,4 +1,4 @@
-# TypeScypt
+# typeScript
  
 + intro
 + variable
