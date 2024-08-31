@@ -1,4 +1,4 @@
-# typeScript
+# TypeScript
  
 + intro
 + variable
