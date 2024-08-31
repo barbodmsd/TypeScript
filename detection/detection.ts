@@ -53,4 +53,33 @@ const adminAccount = (account: User | Admin) => {
     return false
 }
 
-export {}
+///////////////instanceof jut for methods like new Date or new Array and ....
+const forthFunction = (val: Date | string) => {
+    // if(typeof val ==='Date'){} // you ca't do this you got an error
+    if (val instanceof Date) {
+        return val.getDate()
+    } else {
+        return val.toLowerCase()
+    }
+
+}
+
+type Fish = { swim: () => void }
+type Bird = { fly: () => void }
+
+const isFish = (pet: Fish | Bird):pet is Fish => {
+    return (pet as Fish).swim !== undefined // if the pet was fish it's return true
+}
+
+const getFood=(pet:Fish|Bird)=>{
+    if(isFish(pet)){
+        pet
+        return 'fish food'
+    }else {
+        pet
+        return 'bird food '
+    }
+}
+
+
+export { }
