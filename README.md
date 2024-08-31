@@ -10,3 +10,5 @@
 + enums
 + interface
 + class 
++ generic
++ detection

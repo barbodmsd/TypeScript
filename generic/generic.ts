@@ -65,3 +65,5 @@ class Sell<T> {
         this.cart.push(product)
     }
 }
+
+export {}
